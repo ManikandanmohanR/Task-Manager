@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Task Manager</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="container">
+
+        <h1>My Task Manager</h1>
+
+        <input type="text" id="title" placeholder="Enter task title">
+
+        <input type="text" id="description" placeholder="Enter description">
+
+        <button onclick="addTask()">Add Task</button>
+
+        <h3>My Tasks</h3>
+
+        <select id="filter" onchange="loadTasks()">
+            <option value="all">All Tasks</option>
+            <option value="completed">Completed</option>
+            <option value="pending">Pending</option>
+        </select>
+
+        <div id="taskList"></div>
+
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
