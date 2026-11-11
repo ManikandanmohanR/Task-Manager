@@ -9,6 +9,12 @@ async function loadTasks() {
     const filter = document.getElementById("filter").value;
     const list = document.getElementById("taskList");
 
+    const completedCount = tasks.filter(task => task.completed).length;
+    document.getElementById("allCount").textContent = tasks.length;
+    document.getElementById("completedCount").textContent = completedCount;
+    document.getElementById("pendingCount").textContent =
+        tasks.length - completedCount;
+
     list.innerHTML = "";
 
     let filteredTasks = tasks;

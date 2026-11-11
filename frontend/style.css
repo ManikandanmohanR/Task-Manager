@@ -18,6 +18,17 @@ h1 {
     color: #333;
 }
 
+.task-counts {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+    margin: 12px 0;
+}
+
+.task-counts p {
+    margin: 0;
+}
+
 input,
 select {
     width: 100%;

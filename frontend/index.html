@@ -20,6 +20,12 @@
 
         <h3>My Tasks</h3>
 
+        <div class="task-counts" aria-live="polite">
+            <p>All: <span id="allCount">0</span></p>
+            <p>Completed: <span id="completedCount">0</span></p>
+            <p>Pending: <span id="pendingCount">0</span></p>
+        </div>
+
         <select id="filter" onchange="loadTasks()">
             <option value="all">All Tasks</option>
             <option value="completed">Completed</option>
